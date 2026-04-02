@@ -2,6 +2,6 @@ module com.mcrg.studentmanager {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens com.mcrg.studentmanager to javafx.fxml;
-    exports com.mcrg.studentmanager;
+    opens loose.oose.fis.lab.student.manager to javafx.fxml;
+    exports loose.oose.fis.lab.student.manager;
 }
