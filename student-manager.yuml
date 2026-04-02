@@ -1,0 +1,24 @@
+[Staff]-(Login), 
+[Staff]-(Logout), 
+[Staff] - (Register new Student), 
+[Staff] - (Update Student Record),
+[Staff] - (View Student Details),
+(Login)<(Request Password Reset),(Login)>(Verify Credentials)
+(Verify Credentials)-[Database]
+[Professor]-(Login),
+[Professor]-(View Enrolled Students),
+[Professor]-(Enter Student Grades),
+[Professor]-(Upload Course Materials), 
+(Enter Student Grades)<(Hide Grades),
+(Enter Student Grades)<(Show Grades),
+(Enter Student Grades)>(Upload to Online Catalogue)
+(Upload to Online Catalogue)-[Online Catalogue]
+[Student]-(Login),
+[Student]-(View Profile),
+[Student]-(Enroll in Courses),
+[Student]-(View Course Schedule),
+[Student]-(View Course Assignments),
+[Student]-(Submit Assignments),
+[Student]-(View Grades)
+
+ 
